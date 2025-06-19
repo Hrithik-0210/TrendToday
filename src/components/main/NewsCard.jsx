@@ -47,7 +47,7 @@ const NewsCard = ({ article }) => {
   }
 
   return (
-    <div className="news-card-container p-3 rounded-lg h-[21rem] shadow-[1px_0px_22px_-14px_rgba(0,0,0,0.68)] w-full dark:bg-gray-800">
+    <div className="news-card-container bg-white p-3 rounded-lg h-[21rem] shadow-[1px_0px_22px_-16px_rgba(0,0,0,0.68)] w-full dark:bg-gray-800">
       <div className="image-container rounded-lg overflow-hidden">
         <img
           src={imgSrc}
@@ -58,7 +58,11 @@ const NewsCard = ({ article }) => {
       </div>
       <div className="source-and-publishtime-container flex items-center justify-between">
         <div className="source-container flex gap-2 items-center p-1 my-1 ">
-          <img src={source_icon} alt="source-icon" className="w-4 h-4" />
+          <img
+            src={source_icon}
+            alt="source-icon"
+            className="w-4 h-4 rounded-xs"
+          />
           <span className="text-xs">{source_name}</span>
         </div>
         <div>

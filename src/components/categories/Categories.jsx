@@ -3,7 +3,7 @@ import { categories } from "../../constants/categories";
 
 const Categories = ({ setCategory, selectedCategory }) => {
   return (
-    <div className=" flex items-center p-1 shadow-sm dark:shadow-gray-600">
+    <div className=" flex items-center bg-white dark:bg-gray-900 p-1 dark:shadow-gray-600">
       <div className="flex gap-4 md:gap-14 justify-center items-center py-2 m-auto">
         {categories.map((category, index) => (
           <button

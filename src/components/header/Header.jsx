@@ -7,10 +7,8 @@ import { MdOutlineLightMode } from "react-icons/md";
 const Header = ({ setCategory }) => {
   const { theme, toggleTheme } = useTheme();
 
-  console.log(theme);
-
   return (
-    <div className="header-container ">
+    <div className="header-container bg-white dark:bg-gray-900 ">
       <div className="p-2 flex items-center justify-between w-[95%]  md:w-[80%] m-auto ">
         <div className="logo-container flex gap-1.5 items-center">
           <img src={logo} alt="logo-img" className="w-7 h-7 md:w-10 md:h-10" />

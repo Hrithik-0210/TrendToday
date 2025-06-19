@@ -11,7 +11,6 @@ const NewsList = ({ selectedCategory }) => {
     const loadNews = async () => {
       setLoading(true);
       const articles = await fetchNews(selectedCategory);
-      console.log(articles);
       setNews(articles);
       setLoading(false);
     };
@@ -22,7 +21,7 @@ const NewsList = ({ selectedCategory }) => {
     return (
       <div className="w-[95%] md:w-[80%] m-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 py-8">
-          {Array.from({ length: 12 }).map((_, index) => (
+          {Array.from({ length: 20 }).map((_, index) => (
             <ShimmerCard key={index} />
           ))}
         </div>
